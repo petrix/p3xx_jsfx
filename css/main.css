@@ -1,0 +1,386 @@
+html {
+	font-family: serif;
+	font-weight: 100;
+	font-size: 1.2em;
+	line-height: 1.5em;
+
+	color: #333;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	tab-size: 4;
+
+	overflow-y: scroll;
+}
+@media only screen and (max-width: 500px) {
+	html {
+		font-size: 1em;
+		line-height: 1.2em;
+	}
+}
+
+header, h1, h2, h3, h4, h5, h6, .header {
+	font-family: sans-serif;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.center {
+	max-width: 44rem;
+	margin: 0 auto;
+	padding: 0.5rem;
+}
+.clear {
+	clear: both;
+}
+
+header.main {
+	color: #555;
+	padding: 0.2em 0;
+	border-bottom: 1px solid #eee;
+	margin-bottom: 2em;
+}
+
+footer.main {
+	color: #555;
+	padding: 0.2em 0;
+	margin-top: 2em;
+	border-top: 1px solid #eee;
+}
+
+footer .find-me {
+	text-align: center;
+	font-size: 0.8rem;
+	color: #888;
+}
+
+.social {
+	text-align: center;
+}
+.social a {
+	color: inherit;
+	text-decoration: none;
+}
+.icon {
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	height: 1.5rem;
+	width: 1.5rem;
+	font-size: inherit;
+	line-height: inherit;
+	background: #fff;
+	padding: 1rem;
+	margin: 0.3rem 0;
+	border-radius: 3rem;
+	transition: 
+		background 0.2s ease-in-out,
+		transform 0.2s ease-in-out;
+}
+.social a:hover .icon {
+	transform: scale(1.2);
+	background: #ddd;
+}
+
+.social a .icon svg {
+	fill: none;
+	stroke: #666;
+	stroke-width: 1.5px;
+}
+article .social {
+	float: right;
+}
+article .social {
+	margin-top: 0.5rem;
+}
+article .social a .icon {
+	padding: 0.5rem;
+}
+
+hr {
+	border: dotted #ddd;
+	border-width: 2px 0 0;
+	clear: both;
+	margin: 2em 0;
+	height: 0;
+}
+
+copyright {
+	display: block;
+	text-align: center;
+	font-size: 0.8rem;
+}
+
+header.main h1 {
+	float: left;
+	margin: 0;
+	line-height: 0.8rem;
+	font-weight: 100;
+}
+
+h1.index-title {
+	font-weight: 100;
+}
+
+header.main a {
+	display: block;
+	color: inherit;
+	padding: 0.8rem;
+	font-size: 0.8rem;
+	line-height: 1rem;
+}
+
+header.main nav {
+	float: right;
+}
+
+header.main nav a {
+	display: inline-block;	
+	margin-right: 0.2em;
+}
+header.main nav a:last-child {
+	margin-right: 0;
+}
+
+@media only screen and (max-width: 500px) {
+	header.main h1, header.main nav {
+		float: none;
+		text-align: center;
+	}
+	header.main nav {
+		margin-top: 0.3em;
+	}
+	header.main a {
+		display: inline-block;
+		padding: 0.4rem;
+	}
+}
+
+header.main a:hover {
+	background: #eee;
+}
+header.main a.active {
+	background: #fdf0df;
+}
+
+article {
+	padding: 1rem;
+}
+
+article h1, article h2, article h3, article h4 {
+	font-weight: 400;
+	letter-spacing: 0.02em;
+}
+
+article h1 {
+	font-size: 1.6em;
+}
+
+article h2 {
+	border-bottom: 2px solid #ddd;
+	margin-top: 2em;
+	font-size: 1.4em;
+}
+
+article h3 {
+	border-bottom: 2px dotted #ddd;
+}
+article h4 {
+	border-bottom: 1px dotted #ddd;
+}
+
+article footer {
+	border-top: 1px solid #ddd;
+	margin-top: 2em;
+	padding-top: 1em;
+}
+
+article .date {
+	color: #666;
+	font-style: italic;
+}
+
+article .tags {
+	color: #666;
+	font-style: italic;
+}
+
+a.biglink {
+	display: block;
+
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding: 1.2em;
+	color: #333;
+	text-decoration: none;
+}
+a.biglink:hover {
+	background: #f8f8f8;
+}
+
+a.biglink .description {
+	color: #666;
+	font-size: 0.8em;
+}
+
+.reviewers {
+	margin: 2em 0 0 0;
+	font-style: italic;
+	color: #444;
+}
+
+.toc { 
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.toc .section {
+	display: inline-block;
+	font-size: 0.7em;
+	width: 4em;
+	padding-right: 1em;
+	margin-left: -5em;
+	color: #888;
+	text-align: right;
+}
+
+.toc li {
+	position: relative;
+	margin: 0;
+	margin-bottom: 0.5em;
+}
+
+.toc .star {
+	position: absolute;
+	display: inline-block;
+	font-size: 0.7em;
+	width: 1em;
+	margin-left: -1.5em;
+	color: #f7b430;
+	-webkit-text-stroke: 1px #daa131;
+	text-align: right;
+}
+
+.toc-extra {
+	font-size: 0.7em;
+	font-style: italic;
+	font-weight: 800;
+	color: #999;
+}
+.toc-extra a { color: #999; }
+
+.toc li .toc-summary {
+	margin-left: 1em;
+}
+
+.pagination  {
+	margin-top: 2rem;
+	text-align: center;
+}
+.pagination a {
+	display: inline-block;
+	padding: 0.2rem 2rem;
+	color: inherit;
+	border: 1px solid #ccc;
+	cursor: pointer;
+	margin: 0.2em 0.5em;
+	min-width: 3em;
+}
+
+.pagination a:hover {
+	background: #eee;
+}
+.pagination a.disabled {
+	color: #ccc;
+	background: inherit;
+	border-color: #eee;
+}
+
+.highlight {
+	font-size: 0.9em;
+	line-height: 1.2em;
+	overflow-x: auto;
+
+	border: 1px solid;
+	border-color: #ddd #ddd #ccc;
+	border-radius: 3px;
+
+	padding: 0.2em;
+	margin: 1em 0;
+}
+.codetitle {
+	font-size: 0.9em;
+	margin-top: -1em;
+	text-align: center;
+}
+
+.chroma {
+	min-width: 2.3em;
+}
+
+.hanchor {
+	color: #ccc;
+	text-decoration: none;
+	transition: color 0.2s ease-in-out;
+}
+.hanchor:hover {
+	color: #72b5d0;
+}
+
+.property {
+	padding-left: 1em;
+	font-size: 0.8em;
+}
+
+p code {
+	background-color: #eee;
+	border-radius: 3px;
+	padding: 3px 0.5em;
+}
+
+blockquote {
+	border-left: 0.4em solid #eee;
+	margin-left: 0;
+	margin-block-start: 0;
+	margin-block-end: 0;
+
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+figure {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	/*display: flex;*/
+	margin-left: 0;
+	margin-right: 0;
+}
+
+figure > img, figure > video {
+	margin: auto;
+	max-width: 100%;
+}
+
+.profile {
+	float: right;
+	max-width: 15em;
+	margin-left: 2em;
+	box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+}
+
+.big-paragraph {
+	font-size: 1.1em;
+	font-weight: 100;
+	margin-bottom: 2em;
+}
+
+@media only screen and (max-width: 600px) {
+	.profile{
+		display: block;
+		margin: 0 auto;
+		float: none;
+	}
+}
